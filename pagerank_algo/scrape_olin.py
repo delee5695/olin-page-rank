@@ -1,3 +1,9 @@
+"""
+Description: This script scrapes the entiretly of olin.edu to find all pages and backlinks.
+Name: Kenneth
+Date: Discrete 2024
+"""
+
 import requests
 from bs4 import BeautifulSoup
 import pickle
@@ -18,7 +24,7 @@ def scrape_page(url):
             # Find all <a> tags with an href attribute
             links = soup.find_all("a", href=True)
         else:
-            return "broke"
+            return url
 
         # Extract and print each href value
         for idx, link in enumerate(links):
