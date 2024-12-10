@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #0077CC; /* Olin Blue */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #0077CC;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #0077CC;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.search-form button:hover {
+    background-color: #005FA3;
+}
+
+/* Results Table */
+.results {
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+}
+
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Enforce equal-width columns for better wrapping */
+}
+.results col:nth-child(1) {
+    width: 15%;
+}
+
+.results col:nth-child(3) {
+    width: 15%;
+}
+
+.results th, .results td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    word-wrap: break-word; /* Wrap long words */
+    white-space: normal; /* Allow text to wrap to the next line */
+}
+
+.results th {
+    background-color: #0077CC;
+    color: #ffffff;
+}
+
+/* No Results */
+.no-results {
+    color: #FF3333;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+/* Base style for links */
+a {
+    color: #0077CC; /* Olin Blue */
+    text-decoration: none; /* Remove underline by default */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: color 0.3s, background-color 0.3s, border 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect */
+a:hover {
+    color: #005FA3; /* Change text color to white */
+    
+}
+
+/* Visited link */
+a:visited {
+    color: #005FA3; /* Darker shade of Olin Blue for visited links */
+}
+
+/* Active link */
+a:active {
+    color: #ffffff; /* White text for active state */
+    background-color: #005FA3; /* Darker shade of Olin Blue */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Style links inside buttons (if applicable) */
+button a {
+    color: #ffffff; /* White text inside buttons */
+    text-decoration: none; /* No underline */
+    font-weight: bold;
+}
